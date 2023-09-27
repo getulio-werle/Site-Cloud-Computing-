@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block titulo %}Template base{% endblock %}</title>
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
 </head>
 <body>
+    <!-- Menu de navegação -->
     <nav>
         <h1>Meu site</h1>
         <a href="/cadastro">Cadastro</a>
         <a href="/login">Login</a>
     </nav>
-
+    <!-- Conteúdo da página -->
     {% block conteudo %}
     {% endblock %}
 </body>

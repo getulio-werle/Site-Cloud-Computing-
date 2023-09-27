@@ -1,8 +1,8 @@
 {% extends 'base.html' %}
-{% block titulo %}Login{% endblock %}
+{% block titulo %}Cadastro{% endblock %}
 {% block conteudo %}
     <h2>Cadastro</h2>
-    <form action="#">
+    <form action="/cadastro" method="POST" onsubmit="return validarSenha()">
         <label for="nome">Nome completo</label>
         <input type="text" id="nome" name="nome" required><br>
         <label for="cpf">CPF</label>
