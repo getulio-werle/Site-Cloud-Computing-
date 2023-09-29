@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% block titulo %}Home{% endblock %}
+{% block conteudo %}
+<!-- Página de apresentação da empresa fictícia -->
+<div class="d-flex justify-content-center align-items-center flex-column">
+  <div class="d-flex justify-content-center align-items-center flex-column" style="margin-bottom: 3%;">
+    <h1 class="display-1">Cloud Coputing</h1>
+    <p class="lead">
+      Uma nova forma de ver o mundo.
+    </p>
+  </div>
+
+  <!-- Cartões de apresentação -->
+  <div class="container text-center justify-content-center">
+    <div class="row d-flex justify-content-center">
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img src="../static/img/card1.jpg" class="card-img-top" alt="Imagem do planeta terra">
+          <figcaption class="figure-caption">Imagem de rawpixel.com no Freepik</figcaption>
+          <div class="card-body" style="height: 100%;">
+            <h5 class="card-title">Acessibilidade Remota</h5>
+            <p class="card-text">Você pode acessar seus dados e aplicativos de qualquer lugar do mundo,
+              desde que tenha uma conexão com a internet.</p>
+            <a href="#" class="btn btn-primary">Saiba mais</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img src="../static/img/card2.jpg" class="card-img-top" alt="Imagem de uma nuvem">
+          <figcaption class="figure-caption">Imagem de starline no Freepik</figcaption>
+          <div class="card-body" style="height: 100%;">
+            <h5 class="card-title">Backup e Recuperação</h5>
+            <p class="card-text">O serviço em nuvem possui opções robustas de backup e recuperação de dados, garantindo
+              que suas informações estejam seguras.</p>
+            <a href="#" class="btn btn-primary">Saiba mais</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img src="../static/img/card3.jpg" class="card-img-top" alt="Imagem de servidores">
+          <figcaption class="figure-caption">Imagem de fullvector no Freepik</figcaption>
+          <div class="card-body" style="height: 100%;">
+            <h5 class="card-title">Escalabilidade</h5>
+            <p class="card-text">Se seus requisitos aumentarem, você pode facilmente obter mais poder de processamento,
+              armazenamento, etc.</p>
+            <a href="#" class="btn btn-primary">Saiba mais</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

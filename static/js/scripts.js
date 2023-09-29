@@ -20,5 +20,6 @@ function validarSenha() {
         alert('As senhas não são iguais.')
         return false
     }
+    alert('Cadastrado com sucesso.')
     return true
 }

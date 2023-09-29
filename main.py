@@ -1,9 +1,15 @@
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, request, redirect, flash
 
 main = Flask(__name__)
+main.config['SECRET_KEY'] = "password"
+
+# Página home
+@main.route('/')
+@main.route('/home')
+def home():
+    return render_template('home.html')
 
 # Página de login
-@main.route('/')
 @main.route('/login')
 def login():
     return render_template('login.html')
@@ -21,9 +27,10 @@ def cadastro():
 def autenticar():
     email = request.form.get('email')
     senha = request.form.get('senha_login')
-    if email == 'admin@ifro.com' and senha == 'Admin@1234': # Usuário teste
+    if email == 'admin@ifro.edu' and senha == 'Admin@1234': # Usuário teste
         return 'Você está logado.'
     else:
+        flash("Dados inválidos.")
         return redirect ('/login')
     
 if __name__ == '__main__':
